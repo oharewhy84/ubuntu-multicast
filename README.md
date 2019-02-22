@@ -19,5 +19,5 @@ The /root folder is mount by default
 Build and publish the Images
 First the base image has to be created:
 
-docker build -t ory84/ubuntu-multicast:xenial .
+docker build -t oharewhy84/ubuntu-multicast:xenial .
 
