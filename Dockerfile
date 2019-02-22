@@ -4,7 +4,8 @@ FROM ubuntu:xenial
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get -y --no-install-recommends install \
     net-tools tcpdump telnet traceroute curl iperf3 knot-host openssh-client mtr-tiny socat nano vim-tiny \
-    nmap iputils-ping python3-pip git make \ 
+    nmap iputils-ping python3 git make \
+    && git clone https://github.com/troglobit/mtools.git
     && rm -rf /var/lib/apt/lists/*
 
 VOLUME [ "/root" ]
