@@ -12,10 +12,12 @@ socat (utility for reading/writing from/to network connections)
 ssh client
 tcpdump
 telnet
+msend
+mreceive
 The /root folder is mount by default
 
 Build and publish the Images
 First the base image has to be created:
 
-docker build -t gns3/ubuntu:xenial .
-docker push gns3/ubuntu:xenial    (optional)
+docker build -t ory84/ubuntu-multicast:xenial .
+
